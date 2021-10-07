@@ -29,7 +29,10 @@ public class LoginPage {
         this.usernameBox.sendKeys(username);
         this.passwordBox.sendKeys(password);
         this.loginBtn.click();
+        String str = "Nemo";
     }
+
+
 
 }
 //dealitingsometing
