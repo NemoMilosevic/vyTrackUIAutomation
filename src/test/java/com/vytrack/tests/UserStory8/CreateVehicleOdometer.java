@@ -1,4 +1,4 @@
-package com.vytrack.tests;
+package com.vytrack.tests.UserStory8;
 import com.trycloud.utilities.BrowserUtils;
 import com.trycloud.utilities.TestBase;
 import com.vytrack.pages.CreateOdometerPage_Nemo;
@@ -6,7 +6,7 @@ import com.vytrack.pages.LoginPage;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-public class TestUserStory8 extends TestBase {
+public class CreateVehicleOdometer extends TestBase {
 
     LoginPage loginPage = new LoginPage();
     CreateOdometerPage_Nemo createOdometer = new CreateOdometerPage_Nemo();
