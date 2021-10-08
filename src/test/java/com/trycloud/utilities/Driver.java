@@ -17,7 +17,7 @@ public class Driver {
     // read browser type from config.properties file
     public static WebDriver getDriver() {
 
-        String browserName = ConfigurationReader.read("truckDriver1", "truckDriver1", "storeManager1", "browser");
+        String browserName = ConfigurationReader.read("browser");
 
         if (obj == null) {
             switch (browserName) {
