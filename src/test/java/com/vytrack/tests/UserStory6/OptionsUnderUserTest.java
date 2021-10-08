@@ -1,4 +1,4 @@
-package com.vytrack.tests;
+package com.vytrack.tests.UserStory6;
 
 import com.trycloud.utilities.BrowserUtils;
 import com.trycloud.utilities.ConfigurationReader;
@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class US06_OptionsUnderUserTest {
+public class OptionsUnderUserTest {
 
     @Test
     public void test3optionsUnderAccountName() {
