@@ -21,7 +21,7 @@ public class ConfigurationReader {
         }
     }
 
-    public static String read(String driver1, String truckDriver1, String storeManager1, String key){
+    public static String read(String key){
         return properties.getProperty(key);
     }
 
