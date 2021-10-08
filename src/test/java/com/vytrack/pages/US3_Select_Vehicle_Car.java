@@ -10,7 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
 
-public class Select_Vehicle_Car {
+public class US3_Select_Vehicle_Car {
 
     @FindBy(xpath = "//*[@id=\"main-menu\"]/ul/li[2]/a/span")
     public WebElement fleet;
@@ -24,7 +24,7 @@ public class Select_Vehicle_Car {
     @FindBy(xpath = "//tbody[@class='grid-body']/tr[@class='grid-row row-click-action'][1]")
     public WebElement allCheckBox;
 
-    public Select_Vehicle_Car(){
+    public US3_Select_Vehicle_Car(){
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
