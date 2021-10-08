@@ -31,9 +31,9 @@ public class UserStory3Page{
     public void vehicleSelect(){
 
         fleet.click();
-        BrowserUtils.waitFor(2);
+        BrowserUtils.waitFor(5);
         vehicle.click();
-        BrowserUtils.waitFor(2);
+        BrowserUtils.waitFor(5);
         checkBox.click();
         Assertions.assertTrue(checkBox.isSelected());
 
@@ -41,9 +41,9 @@ public class UserStory3Page{
 
     public void userChecksAnyCheckBox(){
         fleet.click();
-        BrowserUtils.waitFor(2);
+        BrowserUtils.waitFor(5);
         vehicle.click();
-        BrowserUtils.waitFor(2);
+        BrowserUtils.waitFor(5);
 
         List<WebElement> selectWholeCheckBox = Driver.getDriver().findElements(By.xpath("//tr[@class='grid-row row-click-action']"));
         System.out.println("selectWholeCheckBox.size() = " + selectWholeCheckBox.size());

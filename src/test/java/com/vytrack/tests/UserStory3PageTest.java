@@ -21,7 +21,8 @@ public class UserStory3PageTest extends TestBase {
  */
 
         LoginPage loginPage = new LoginPage();
-        loginPage.goToAndLogin(ConfigurationReader.read("truckDriver1", "truckDriver1","storeManager1","salesManager1"), ConfigurationReader.read("truckDriver1", "truckDriver1", "storeManager1", "password"));
+        loginPage.goTo();
+        loginPage.login(ConfigurationReader.read("storeManager1"), ConfigurationReader.read("password"));
 
         BrowserUtils.waitFor(4);
 
@@ -42,7 +43,8 @@ public class UserStory3PageTest extends TestBase {
   */
 
         LoginPage loginPage = new LoginPage();
-        loginPage.goToAndLogin(ConfigurationReader.read("truckDriver1", "truckDriver1","storeManager1","salesManager1"), ConfigurationReader.read("truckDriver1", "truckDriver1", "storeManager1", "password"));
+        loginPage.goTo();
+        loginPage.login(ConfigurationReader.read("storeManager1"), ConfigurationReader.read("password"));
 
         BrowserUtils.waitFor(4);
 
