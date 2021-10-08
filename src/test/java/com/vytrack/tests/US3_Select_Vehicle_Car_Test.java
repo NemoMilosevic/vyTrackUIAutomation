@@ -1,13 +1,12 @@
 package com.vytrack.tests;
 
 import com.vytrack.pages.LoginPage;
-import com.vytrack.pages.Select_Vehicle_Car;
 import com.trycloud.utilities.BrowserUtils;
 import com.trycloud.utilities.ConfigurationReader;
 import com.trycloud.utilities.TestBase;
 import org.junit.jupiter.api.Test;
 
-public class  US3_Select_Vehicle_Car extends TestBase {
+public class US3_Select_Vehicle_Car_Test extends TestBase {
 
     @Test
     public void acceptanceCriteria1(){
@@ -21,11 +20,11 @@ public class  US3_Select_Vehicle_Car extends TestBase {
  */
 
         LoginPage loginPage = new LoginPage();
-        loginPage.goToAndLogin(ConfigurationReader.read("salesManager1"), ConfigurationReader.read("password"));
+        loginPage.goTo(ConfigurationReader.read("salesManager1"), ConfigurationReader.read("password"));
 
         BrowserUtils.waitFor(4);
 
-        Select_Vehicle_Car userSelectFirstCheckBox = new Select_Vehicle_Car();
+        com.vytrack.pages.US3_Select_Vehicle_Car userSelectFirstCheckBox = new com.vytrack.pages.US3_Select_Vehicle_Car();
         userSelectFirstCheckBox.vehicleSelect();
         BrowserUtils.waitFor(2);
     }
@@ -42,11 +41,11 @@ public class  US3_Select_Vehicle_Car extends TestBase {
   */
 
         LoginPage loginPage = new LoginPage();
-        loginPage.goToAndLogin(ConfigurationReader.read("salesManager1"), ConfigurationReader.read("password"));
+        loginPage.goTo(ConfigurationReader.read("salesManager1"), ConfigurationReader.read("password"));
 
         BrowserUtils.waitFor(4);
 
-        Select_Vehicle_Car userSelectAnyCheckBox = new Select_Vehicle_Car();
+        com.vytrack.pages.US3_Select_Vehicle_Car userSelectAnyCheckBox = new com.vytrack.pages.US3_Select_Vehicle_Car();
         userSelectAnyCheckBox.userChecksAnyCheckBox();
         BrowserUtils.waitFor(2);
     }
