@@ -21,14 +21,11 @@ public class LoginPage {
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
-    public void goTo(){
-        Driver.getDriver().get(ConfigurationReader.read("url"));
-    }
-
-    public void login(String username, String password){
-        this.usernameBox.sendKeys(username);
-        this.passwordBox.sendKeys(password);
-        this.loginBtn.click();
+    public void goToAndLogin (String username, String password){
+        Driver.getDriver().get(ConfigurationReader.read("truckDriver1", "storeManager1", "salesManager1", "url"));
+        usernameBox.sendKeys(username);
+        passwordBox.sendKeys(password);
+        loginBtn.click();
     }
 
 }
