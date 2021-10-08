@@ -35,7 +35,7 @@ public class AC1selectAllTheAccounts extends TestBase {
 
 
         List<WebElement> checkBoxes = driver.findElements(By.xpath("//td/input[@type='checkbox']"));
-
+// .
         for (WebElement eachBoxes : checkBoxes) {
             Assertions.assertTrue(eachBoxes.isSelected());
 
