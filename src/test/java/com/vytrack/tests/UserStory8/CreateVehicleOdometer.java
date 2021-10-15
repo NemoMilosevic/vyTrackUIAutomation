@@ -1,7 +1,7 @@
 package com.vytrack.tests.UserStory8;
 import com.trycloud.utilities.BrowserUtils;
 import com.trycloud.utilities.TestBase;
-import com.vytrack.pages.CreateOdometerPage_Nemo;
+import com.vytrack.pages.US08_CreateOdometerPage;
 import com.vytrack.pages.LoginPage;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class CreateVehicleOdometer extends TestBase {
 
     LoginPage loginPage = new LoginPage();
-    CreateOdometerPage_Nemo createOdometer = new CreateOdometerPage_Nemo();
+    US08_CreateOdometerPage createOdometer = new US08_CreateOdometerPage();
 
     @Test
     public void testDriverCreateOdometer(){

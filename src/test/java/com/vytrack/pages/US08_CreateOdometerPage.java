@@ -8,7 +8,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class CreateOdometerPage_Nemo {
+public class US08_CreateOdometerPage {
 
     @FindBy(xpath = "//*[@title='Create Vehicle Odometer']")
     public WebElement createOdometerButton;
@@ -37,7 +37,7 @@ public class CreateOdometerPage_Nemo {
     @FindBy(xpath = "//*[@id=\"flash-messages\"]/div/div/div[2]/div")
     public WebElement entitySavedMsgManager;
 
-    public CreateOdometerPage_Nemo(){
+    public US08_CreateOdometerPage(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
