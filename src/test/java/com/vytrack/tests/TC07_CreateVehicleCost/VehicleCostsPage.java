@@ -1,4 +1,4 @@
-package com.vytrack.pages;
+package com.vytrack.tests.TC07_CreateVehicleCost;
 
 import com.trycloud.utilities.BrowserUtils;
 import com.trycloud.utilities.Driver;

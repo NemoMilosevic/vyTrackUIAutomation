@@ -1,10 +1,8 @@
-package com.vytrack.tests;
+package com.vytrack.tests.TC07_CreateVehicleCost;
 
 import com.trycloud.utilities.BrowserUtils;
-import com.trycloud.utilities.Driver;
 import com.trycloud.utilities.TestBase;
 import com.vytrack.pages.LoginPage;
-import com.vytrack.pages.VehicleCostsPage;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.Keys;
 
