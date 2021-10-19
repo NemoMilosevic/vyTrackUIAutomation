@@ -24,10 +24,13 @@ public class OptionsUnderUserTest {
 
         assertEquals("My Configuration",options.myConfiguration.getText());
         assertEquals("My Calendar", options.myCalendar.getText());
-        assertEquals("My Username", options.myUser.getText());
+        assertEquals("My Username", options.myUser.getText());// this will not pass-it's bug
         System.out.println("myConfiguration.getText() = " +options. myConfiguration.getText());
         System.out.println("myCalendar.getText() = " + options.myCalendar.getText());
         System.out.println("myUser.getText() = " + options.myUser.getText());
+
+        //Bug - misspelled Username/User
+
 
 
         BrowserUtils.waitFor(2);
