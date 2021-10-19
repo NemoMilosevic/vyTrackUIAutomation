@@ -58,14 +58,19 @@ public class VehicleCostsPage {
 
         BrowserUtils.waitFor(4);
 
+        /*
+        @FindBy(xpath =" //strong[normalize-space(.)='New order has been successfully added.']")
+        public WebElement successMessage ;
+
+         */
+
     }
 
 
 
-    /*
-     @FindBy(xpath =" //strong[normalize-space(.)='New order has been successfully added.']")
-    public WebElement successMessage ;
-     */
+
+
+
 
 
 }
